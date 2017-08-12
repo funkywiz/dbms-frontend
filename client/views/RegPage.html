@@ -1,0 +1,37 @@
+<section id="hire">
+    <h1>Sign Up</h1>
+
+    <form ng-controller = "CustomerController as ctrl">
+        <div class="field name-box">
+            <input type="text" ng-model="ctrl.cust_id" id="name" placeholder="Your ID?"/>
+            <label for="name">Cutomer ID</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" ng-model="ctrl.cust_name" id="email" placeholder="customer name"/>
+            <label for="email">customer name</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" id="email"ng-model="ctrl.cust_city" placeholder="City in which you live"/>
+            <label for="email">City name</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" id="email" ng-model="ctrl.cust_state" placeholder="State in which you live"/>
+            <label for="email">State name</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" id="email" ng-model="ctrl.acc_type"  placeholder="Account Type"/>
+            <label for="email">Account Type</label>
+            <span class="ss-icon">check</span>
+        </div><br><br><br><br><br>
+
+        <input class="button" type="submit" ng-click="ctrl.signup()" />
+    </form>
+</section>

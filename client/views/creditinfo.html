@@ -1,0 +1,26 @@
+<section id="hire">
+    <h1>CREDIT CARD INFO </h1>
+
+    <form ng-controller = "CustomerController as ctrl">
+        <div class="field name-box">
+            <input type="text" ng-model="ctrl.cardno" id="name" placeholder="CARD NUMBER"/>
+            <label for="name">Card Number</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" ng-model="ctrl.expdate" id="email" placeholder="EXP DATE"/>
+            <label for="email">EXP DATE</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" id="emailid" ng-model="ctrl.cardcust_id" placeholder="Your ID"/>
+            <label for="email">Customer ID</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+
+        <input class="button" type="submit" ng-click="ctrl.addcreditinfo()" value="ADD CARD INFO" >
+    </form>
+</section>

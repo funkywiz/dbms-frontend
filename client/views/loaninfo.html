@@ -1,0 +1,26 @@
+<section id="hire">
+    <h1>LOAN INFO</h1>
+
+    <form ng-controller = "CustomerController as ctrl">
+        <div class="field name-box">
+            <input type="text" ng-model="ctrl.loanamt" id="name" placeholder="Loan amt"/>
+            <label for="name">Loan Amount</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" ng-model="ctrl.loannumber" id="email" placeholder="loan number"/>
+            <label for="email">loan number</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" id="email"ng-model="ctrl.loancust_id" placeholder="Your ID"/>
+            <label for="email">Customer ID</label>
+            <span class="ss-icon">check</span>
+        </div>
+
+
+        <input class="button" type="submit" ng-click="ctrl.addloaninfo()" value="ADD CARD INFO" >
+    </form>
+</section>
